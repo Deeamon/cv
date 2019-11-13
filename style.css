@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header,
-.main{
+.main,
+.footer{
   background-color: #31302c; 
   max-width: 1024px;
   width: 100%;
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6{
 .header__photo{
   width: 200px;
   height: 200px;
-  background: url(../assets/images/photo.jpg) no-repeat -19px -3px;
+  background: url(assets/images/photo.jpg) no-repeat -19px -3px;
   background-size: 109%;
   border: 5px solid #f7b22a;
   border-radius: 50%;
@@ -168,6 +169,20 @@ h1, h2, h3, h4, h5, h6{
   font-weight: bold;
 }
 
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.social--footer{
+  margin: 3em 0 2em;
+}
+
+.contacts--footer{
+  margin: 0 auto;
+  padding: 1em 0 2em;
+}
+
 /*accordion*/
 .accordion__item{
   /* border: 3px solid black; */
@@ -191,6 +206,7 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   
   cursor: pointer;
+  border-bottom: 3px solid #f7b22a;
   transition: color 0.1s linear;
 }
 
@@ -220,7 +236,7 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 auto;
   padding: 1em 0 3.4em;
   display: none;
-  border-top: 3px solid #f7b22a;
+  
   border-bottom: 5px solid #f7b22a;
 }
 
@@ -297,8 +313,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .name__banner{
+  max-width: 150px;
   font-size: 1rem;
   border: 1px solid #f7b22a;
+  padding: 1em;
 }
 
 .prev-img{
@@ -437,6 +455,8 @@ h1, h2, h3, h4, h5, h6{
   display: none;
 }
 
+
+
 @keyframes left{
   from {
     left: 0;
@@ -563,3 +583,4 @@ h1, h2, h3, h4, h5, h6{
     display: block;
   }
 }
+
